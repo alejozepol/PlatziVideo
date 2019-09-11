@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 body{
     margin: 0%;
-    background-color: #AB88FF;
+    background-color: #8F57FD;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 20px
 }
@@ -9,7 +9,7 @@ body{
 .header{
     width: 100%;
     height: 80px;
-    background-color: #AB88FF;
+    background-color: #8F57FD;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,4 +60,31 @@ body{
 .header__menu li a{
     text-decoration: none;
     color: #fff;
+}
+.buscador{
+    margin-top: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buscador h2{
+    color: #fff;;
+}
+.input{
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    outline: none;
+    color: #fff;
+    padding-left: 3%;
+}
+.input::placeholder{
+    color: #fff;
+}
+.buscador input{
+    width: 80%;
+    height: 50px;
 }
