@@ -185,6 +185,9 @@ transform: translate3d(100px,0,0)
     text-align: center;
     width: 380px;
     height: 650px;
+    -webkit-box-shadow: 0px 0px 45px -14px #fff;
+    -moz-box-shadow: 0px 0px 45px -14px #fff;
+    box-shadow: 0px 0px 45px -14px #fff;
 }
 
 .form--titulo{
