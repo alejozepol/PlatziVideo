@@ -85,17 +85,32 @@ body{
     color: #fff;;
 }
 .input{
-    border: 2px solid #fff;
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.1);
+   
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
     outline: none;
     color: #fff;
-    padding-left: 3%;
+    
 }
 .input::placeholder{
     color: #fff;
+}
+.inputRedondeado{
+    padding-left: 3%;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.inputLineaInferior{
+    border-top: 0px;
+    border-bottom: 2px solid #fff;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: transparent;
+}
+.inputLineaInferior::placeholder{
+    text-align: center;
+
 }
 .buscador input{
     width: 80%;
@@ -113,7 +128,6 @@ body{
     padding-bottom: 10px;
 }
 .carrusel--item{
-    background: blue;
     width: 200px;
     height: 250px;
     border-radius: 20px;
@@ -160,15 +174,110 @@ transform: translate3d(100px,0,0)
     opacity: 1;
 }
 
-.inicioSesion{
+.login{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+.login__container{
+    border: 1px solid #fff;
+    border-radius: 30px;
+    text-align: center;
+    width: 380px;
+    height: 600px;
+}
+
+.form--titulo{
+    margin-top: 20%;
+}
+.login__container--form input{
+    margin: 5%;
+    width: 70%
+}
+.login__container--form input{
+    margin: 5%;
+    width: 70%
+}
+.login__container--form input:focus{
+    border-bottom: 2px solid #E6AF2E;
+}
+.botonRedondoBlanco{
+    border: 1px solid #fff;
+    background-color: #ffffff33;
+    border-radius: 30px;
+    height: 50px;
+    width: 70%;
+    -webkit-box-shadow: 0px 0px 45px -14px #fff;
+    -moz-box-shadow: 0px 0px 45px -14px #fff;
+    box-shadow: 0px 0px 45px -14px #fff;
+}
+
+.login__container--form hr{
+    margin-top: 8%;
+    margin-bottom: 8%;
+    border: 1px solid #ffffff33;
+    width: 70%;
+}
+.form--opciones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+#recordarme{
+    margin: initial;
+    width: 30px;
+    text-decoration: none;
+}
+.form--opciones hr {
+    width: 0%;
+    height: 15px;
+    margin: 3%;
+}
+.form--opciones a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+.form--opciones a:hover{
+    text-decoration: none;
+    color: #E6AF2E;
+    font-size: 16px;
+}
+.login__container--socialMedia{
     display: flex;
     flex-direction: column;
     align-items: center;
-    }
-.login{
-    width: 350px;
-    height: 600px;
-    border: 2px solid #fff;
-    border-radius: 30px;
+    justify-content: center;
+}
 
+.socialMedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.socialMedia--google:hover{
+
+    background-color: #ffffff33;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.socialMedia--twitter:hover{
+
+    background-color: #2168b933;
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.socialMedia img{
+    width: 30px;
+}
+.login__container--registro a {
+    text-decoration: none;
+    color: #fff;
+}
+.login__container--registro a:hover{
+    text-decoration: none;
+    color: #E6AF2E;
 }

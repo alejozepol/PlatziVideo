@@ -8,39 +8,44 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body class="fondoDegradadoVerdeMorado">
-    <section class="inicioSesion">
-        <header class="header">
-            <img class="header__img" src="img/logo-platzi-video-BW2.png" alt="LogoPlatziVideo">
-        </header>
-        <section class="login">
-            <form class="login__form">
+    <header class="header">
+        <img class="header__img" src="img/logo-platzi-video-BW2.png" alt="LogoPlatziVideo">
+    </header>
+    <section class="login">
+        <div class="login__container">
+            <form class="login__container--form">
                 <h2 class="form--titulo">Inicio Sesión</h2>
-                <input class="form--titulo__correo" type="text" placeholder="Correo">
-                <input class="form--titulo__clave" type="password" placeholder="Contraseña">
-                <button type="button">Inciar sesión</button>
-                <input type="checkbox" placeholder="Recuérdame">
-                <a href="">Olvidé mi contraseña</a>              
+                <input class=" input inputLineaInferior form--titulo__correo" type="email" placeholder="Correo">
+                <input class=" input inputLineaInferior form--titulo__clave" type="password" placeholder="Contraseña">
+                <button type="button" class="botonRedondoBlanco">Inciar sesión</button>
+                <hr>
+                <div class="form--opciones">
+                        <input type="checkbox" placeholder="Recuérdame" id="recordarme">
+                        <label for="recordarme">Recuerdame</label>
+                        <hr>
+                        <a href="">Olvidé mi contraseña</a> 
+                </div>      
             </form>
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div class="login__container--socialMedia">
+                <div class="socialMedia--google socialMedia">
+                    <img src="img/ico-google.svg" alt="google">
                     <p>Iniciar sesión con Google</p>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="socialMedia--twitter socialMedia">
+                    <img src="img/ico-twitter.svg" alt="Twitter">
                     <p>Iniciar sesión con Twitter</p>
                 </div>
             </div>
-            <div>
-                <p>No tienes ninguna cuenta Registrate</p>
+            <div class="login__container--registro">
+                <p>No tienes ninguna cuenta <a href="#">Registrate</a></p>
             </div>
-        </section>
-        <footer>
-            <a href="">Terminos de uso</a>
-            <a href="">Declaración de privacidad</a>
-            <a href="">Centro de ayuda</a>
-        </footer>
+        </div>
     </section>
+    <footer>
+        <a href="">Terminos de uso</a>
+        <a href="">Declaración de privacidad</a>
+        <a href="">Centro de ayuda</a>
+    </footer>
 </body>
 
 </html>
